@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Page Generator</title>
+</head>
+<body>
+
+    <h1>Click the button below to go to a random page!</h1>
+    <br>
+    <br>
+    <h2>i made this with chatgpt looool (if you found your're a wizerd)</h2>
+
+    <button onclick="generateRandomPage()">Go to Random Page</button>
+
+    <script>
+        function generateRandomPage() {
+            // Generate a random number between 1 and 3687525
+            var randomPageNumber = Math.floor(Math.random() * 3687525) + 1;
+            
+            // Redirect to the random page
+            window.location.href = "https://onlinesequencer.net/" + randomPageNumber;
+        }
+    </script>
+
+</body>
+</html>
